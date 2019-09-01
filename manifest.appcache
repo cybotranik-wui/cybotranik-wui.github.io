@@ -3,7 +3,6 @@ CACHE MANIFEST
 cache.html
 docs/media/favicon.ico
 docs/media/favicon.png
-https://unpkg.com/cybotranik-wui
 
 # Use from network if available
 NETWORK:
