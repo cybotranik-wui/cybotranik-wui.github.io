@@ -1,6 +1,10 @@
 CACHE MANIFEST
 # v1
 cache.html
+sw.js
+service-worker.js
+cache.html
+fallback.html
 docs/media/favicon.ico
 docs/media/favicon.png
 
