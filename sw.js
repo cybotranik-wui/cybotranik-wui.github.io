@@ -1,9 +1,30 @@
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
+const version = "0.0.1";
+const cacheName = `cybotranik-wui-${version}`;
+self.addEventListener('install', e => {
+  e.waitUntil(
+    caches.open(cacheName).then(cache => {
+      return cache.addAll([
+        `/`,
+        `/index.html`,
+        `/docs/media/favicon.ico`,
+        `/docs/media/favicon.png`,
+        `/service-worker.js`
+      ])
+          .then(() => self.skipWaiting());
+    })
+  );
+});
 
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }).catch(function (err) {
+self.addEventListener('activate', event => {
+  event.waitUntil(self.clients.claim());
+});
 
-        console.log('ServiceWorker registration failed: ', err);
-    });
-}
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.open(cacheName)
+      .then(cache => cache.match(event.request, {ignoreSearch: true}))
+      .then(response => {
+      return response || fetch(event.request);
+    })
+  );
+});
