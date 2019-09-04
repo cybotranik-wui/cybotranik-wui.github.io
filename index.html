@@ -39,14 +39,15 @@
     <link rel="icon" type="image/png" sizes="96x96" href="assets/theme/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/theme/img/favicon/favicon-16x16.png">
     <link rel="icon" href="assets/theme/img/favicon/favicon.ico">
-    <link rel="manifest" href="assets/theme/img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/theme/img/favicon/ms-icon-144x144.png">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-config" content="browserconfig.xml" />
     <meta name="theme-color" content="#ffffff">
 
     <!-- Cybotranik WUI -->
     <script src="https://unpkg.com/cybotranik-wui"></script>
-    <script src="service-worker.js"></script>
+    <script src="assets/theme/js/app.js"></script>
 </head>
 
 <body>
@@ -59,7 +60,7 @@
                     </header>
                     <section is="article-section" id="content-sectioning">
                         <figure>
-                            <img src="docs/media/favicon.png" alt="Cybotranik WUI">
+                            <img src="assets/theme/img/favicon/apple-icon-180x180.png" alt="Cybotranik WUI">
                         </figure>
                         <header is="section-header">
                             <h2>Content sectioning</h4>
