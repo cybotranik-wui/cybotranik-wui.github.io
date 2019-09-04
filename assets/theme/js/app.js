@@ -16,6 +16,7 @@ function Documentation() { }
 Documentation.prototype.ServiceWorker = function () {
 
   /// Service Worker Cache Delete
+  // eslint-disable-next-line no-unused-vars
   function deleteCache(){
     caches.keys().then(function(names) {
       for (let name of names){
@@ -31,8 +32,12 @@ Documentation.prototype.ServiceWorker = function () {
 
     navigator
       .serviceWorker.register('service-worker.js', { scope: '/' })
-      .then(function () {
-        
+      .then(function (serviceWorkerRegistration) {
+
+        /// Push permission
+        serviceWorkerRegistration.pushManager.getSubscription()
+
+        return serviceWorkerRegistration
       })
 
     navigator.serviceWorker.ready.then(function () {
