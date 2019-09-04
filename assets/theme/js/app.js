@@ -19,7 +19,7 @@ Documentation.prototype.ServiceWorker = function () {
   // eslint-disable-next-line no-unused-vars
   function deleteCache(){
     caches.keys().then(function(names) {
-      for (let name of names){
+      for (var name of names){
         console.log('Cache Clear : ' + name)
         caches.delete(name)
       }
