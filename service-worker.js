@@ -27,3 +27,10 @@ self.addEventListener('fetch', event => {
   )
 })
 
+self.addEventListener('push', function(event) {
+  const promiseChain = self.registration.showNotification('Cybotranik, WUI.')
+
+  event.waitUntil(promiseChain)
+  
+})
+
