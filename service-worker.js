@@ -1,4 +1,4 @@
-var version = '0.0.1'
+var version = '1.0.0'
 var cacheName = 'cybotranik-wui-' + version
 self.addEventListener('install', e => {
   e.waitUntil(
