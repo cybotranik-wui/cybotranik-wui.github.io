@@ -33,7 +33,7 @@
     <meta name="generator" content="cybotranik-wui.github.io">
 
     <!-- License -->
-    <link rel="license" href="LICENSE">
+    <link rel="license" href="../LICENSE">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="../assets/theme/img/favicon/apple-icon-57x57.png">
@@ -72,7 +72,7 @@
                     <header is="article-header">
                         <h1>Cybotranik</h1>
                     </header>
-                    <section is="article-section" id="content-sectioning">
+                    <section is="article-section">
                         <figure>
                             <img src="../assets/theme/img/favicon/ms-icon-310x310.png" alt="Cybotranik WUI">
                         </figure>
@@ -81,7 +81,7 @@
                         </header>
                         <nav is="aside-nav">
                             <ul>
-
+                                <li><a href="#blockquote">blockquote</a></li>
                             </ul>
                         </nav>
                     </section>
@@ -95,10 +95,36 @@
                     <div is="article-section">
                         <nav is="header-nav">
                             <ul is="horizontal-menu">
-
+                                <li><a href="#blockquote">blockquote</a></li>
                             </ul>
                         </nav>
                     </div>
+                    <section is="article-section" id="blockquote">
+                        <header is="section-header">
+                            <h2>blockquote</h2>
+                        </header>
+                        <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+                            <p is="section-description">The HTML blockquote Element indicates that the enclosed text is
+                                an
+                                extended quotation. Usually, this is rendered visually by indentation. A URL for the
+                                source of the quotation may be given using the cite attribute, while a text
+                                representation of the source can be given using the cite element.</p>
+                            <footer>—mozilla, <cite>developer</cite></footer>
+                        </blockquote>
+                        <article is="section-content">
+                            <header is="article-header">
+                                <h3>Example</h3>
+                            </header>
+                            <div is="article-app">
+                                <blockquote>
+                                    <p is="section-description">Today's scientists take mathematics above experiment.
+                                        That's why they always go after some equations. As a result, they build
+                                        structures that have nothing to do with reality.</p>
+                                    <footer>—, <cite>Nikola TESLA</cite></footer>
+                                </blockquote>
+                            </div>
+                        </article>
+                    </section>
                 </article>
             </div>
         </div>
