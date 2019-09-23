@@ -3,17 +3,9 @@
 
 <head>
 
-    <!-- Google Analytics -->
+    <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147146676-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', '147146676-1');
-    </script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }; gtag('js', new Date()); gtag('config', '147146676-1');</script>
 
     <!-- Meta -->
     <meta charset="UTF-8">
@@ -67,8 +59,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <!-- Cybotranik WUI -->
-    <script async src="https://unpkg.com/cybotranik-wui"></script>
-    <script async src="../assets/theme/js/app.js"></script>
+    <script src="https://unpkg.com/cybotranik-wui"></script>
+    <!-- Cybotranik WUI Theme -->
+    <script>wui.Theme()</script>
+    
+    <!-- Application -->
+    <script src="../assets/theme/js/app.js"></script>
 </head>
 
 <body>
@@ -98,7 +94,7 @@
                 <header is="section-header">
                     <h2>Starter</h2>
                 </header>
-                <p is="section-description">HTML <a href="starter/">Starter</a> Example.</p>
+                <p is="section-description">HTML <a href="starter/" target="_blank">Starter</a> Example.</p>
             </section>
         </article>
     </main>

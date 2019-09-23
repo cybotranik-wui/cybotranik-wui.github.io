@@ -3,17 +3,9 @@
 
 <head>
 
-    <!-- Google Analytics -->
+    <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147146676-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', '147146676-1');
-    </script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }; gtag('js', new Date()); gtag('config', '147146676-1');</script>
 
     <!-- Meta -->
     <meta charset="UTF-8">
@@ -67,8 +59,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <!-- Cybotranik WUI -->
-    <script async src="https://unpkg.com/cybotranik-wui"></script>
-    <script async src="assets/theme/js/app.js"></script>
+    <script src="https://unpkg.com/cybotranik-wui"></script>
+    <!-- Cybotranik WUI Theme -->
+    <script>wui.Theme()</script>
+
+    <!-- Application-->
+    <script src="assets/theme/js/app.js"></script>
 </head>
 
 <body>
@@ -86,19 +82,22 @@
             <header is="section-header">
                 <h1>Web User Interface</h1>
             </header>
-            <p is="section-description">The all-in-one, user interface kit. This interface is suitable for use in many programming languages.</p>
+            <p is="section-description">The all-in-one, user interface kit. This interface is suitable for use in many
+                programming languages.</p>
         </section>
         <section is="article-section" id="fast-web-templates">
             <header is="section-header">
                 <h2>Fast web templates</h2>
             </header>
-            <p is="section-description">It allows you to translate HTML code into programming languages, so you can quickly and effectively create web templates.</p>
+            <p is="section-description">It allows you to translate HTML code into programming languages, so you can
+                quickly and effectively create web templates.</p>
         </section>
         <section is="article-section" id="depends-on-standards">
             <header is="section-header">
                 <h2>Depends on standards</h2>
             </header>
-            <p is="section-description">W3 standards compliant, semantic, new and old browser support, clean structure allows for quick application.</p>
+            <p is="section-description">W3 standards compliant, semantic, new and old browser support, clean structure
+                allows for quick application.</p>
         </section>
         <section is="article-section" id="compatible">
             <header is="section-header">
@@ -110,20 +109,23 @@
             <header is="section-header">
                 <h2>Semantics</h2>
             </header>
-            <p is="section-description">cybotranik-wui provides additional information to the browser's accessibility API.
+            <p is="section-description">cybotranik-wui provides additional information to the browser's accessibility
+                API.
             </p>
         </section>
         <section is="article-section" id="cross-platform">
             <header is="section-header">
                 <h2>Cross-platform</h2>
             </header>
-            <p is="section-description">It takes advantage of the additional features of the new generation of browsers, and supports browsers such as the older generation (ie ie8).</p>
+            <p is="section-description">It takes advantage of the additional features of the new generation of browsers,
+                and supports browsers such as the older generation (ie ie8).</p>
         </section>
         <section is="article-section" id="Mobile">
             <header is="section-header">
                 <h2>Mobile</h2>
             </header>
-            <p is="section-description">It provides good looks on mobile devices and provides performance with a single file library.
+            <p is="section-description">It provides good looks on mobile devices and provides performance with a single
+                file library.
             </p>
         </section>
     </main>

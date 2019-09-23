@@ -3,17 +3,9 @@
 
 <head>
 
-    <!-- Google Analytics -->
+    <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147146676-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', '147146676-1');
-    </script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }; gtag('js', new Date()); gtag('config', '147146676-1');</script>
 
     <!-- Meta -->
     <meta charset="UTF-8">
@@ -67,8 +59,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <!-- Cybotranik WUI -->
-    <script async src="https://unpkg.com/cybotranik-wui"></script>
-    <script async src="../../../assets/theme/js/app.js"></script>
+    <script src="https://unpkg.com/cybotranik-wui"></script>
+    <!-- Cybotranik WUI Theme -->
+    <script>wui.Theme()</script>
+
+    <!-- Application-->
+    <script src="../../../assets/theme/js/app.js"></script>
 </head>
 
 <body>
@@ -109,7 +105,8 @@
                         <h3>Example</h3>
                     </header>
                     <div is="article-app">
-                        <p>The little kitten gently seated itself on a piece of carpet. Later in his life, this would be referred to as the time the cat sat on the mat.</p>
+                        <p>The little kitten gently seated itself on a piece of carpet. Later in his life, this would be
+                            referred to as the time the cat sat on the mat.</p>
                     </div>
                 </article>
             </section>
@@ -119,7 +116,9 @@
                 </header>
                 <blockquote cite="https://www.w3.org/TR/html52/grouping-content.html#the-address-element">
                     <p is="section-description">
-                        The <code is="html-tag">address</code> element represents contact information for a person, people or organization. It should include physical and/or digital location/contact information and a means of identifying a person(s) or
+                        The <code is="html-tag">address</code> element represents contact information for a person,
+                        people or organization. It should include physical and/or digital location/contact information
+                        and a means of identifying a person(s) or
                         organization the information pertains to.</p>
                     <footer>-w3, <cite>HTML5</cite></footer>
                 </blockquote>
@@ -129,11 +128,12 @@
                     </header>
                     <div is="article-app">
                         <address is="web-address">
-                                Visit <a href="https://cybotranik-wui.github.io"> cybotranik-wui.github.io</a><br>
-                                If you see any bugs, please <a href="mailto:Jack@cybotranik-wui.github.io"> contact webmaster</a>.<br>
-                                Contact: <a href="mailto:jack@cybotranik-wui.github.io">Jack JACKSON</a>.<br>
-                                Phone: <a href="tel:+11234567890">(123) 456-7890</a>
-                            </address>
+                            Visit <a href="https://cybotranik-wui.github.io"> cybotranik-wui.github.io</a><br>
+                            If you see any bugs, please <a href="mailto:Jack@cybotranik-wui.github.io"> contact
+                                webmaster</a>.<br>
+                            Contact: <a href="mailto:jack@cybotranik-wui.github.io">Jack JACKSON</a>.<br>
+                            Phone: <a href="tel:+11234567890">(123) 456-7890</a>
+                        </address>
                     </div>
                 </article>
             </section>
@@ -143,7 +143,9 @@
                 </header>
                 <blockquote cite="https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element">
                     <p is="section-description">
-                        The <code is="html-tag">blockquote</code> element represents content that is quoted from another source, optionally with a citation which must be within a footer or cite element, and optionally with in-line changes such as annotations
+                        The <code is="html-tag">blockquote</code> element represents content that is quoted from another
+                        source, optionally with a citation which must be within a footer or cite element, and optionally
+                        with in-line changes such as annotations
                         and abbreviations.</p>
                     <footer>-w3, <cite>HTML5</cite></footer>
                 </blockquote>
@@ -153,7 +155,9 @@
                     </header>
                     <div is="article-app">
                         <blockquote>
-                            <p is="section-description">Today's scientists take mathematics above experiment. That's why they always go after some equations. As a result, they build structures that have nothing to do with reality.</p>
+                            <p is="section-description">Today's scientists take mathematics above experiment. That's why
+                                they always go after some equations. As a result, they build structures that have
+                                nothing to do with reality.</p>
                             <footer>—, <cite>Nikola TESLA</cite></footer>
                         </blockquote>
                     </div>
@@ -165,7 +169,8 @@
                 </header>
                 <blockquote cite="https://www.w3.org/TR/html52/grouping-content.html#the-dd-element">
                     <p is="section-description">
-                        The <code is="html-tag">dd</code> element represents a description, part of a term-description group in a description list (dl element).</p>
+                        The <code is="html-tag">dd</code> element represents a description, part of a term-description
+                        group in a description list (dl element).</p>
                     <footer>-w3, <cite>HTML5</cite></footer>
                 </blockquote>
                 <article is="section-content">
@@ -175,12 +180,14 @@
                     <div is="article-app">
                         <dl>
                             <dt>Atom</dt>
-                            <dd>It is the smallest building block with the chemical and physical properties of all matter in the known universe.</dd>
+                            <dd>It is the smallest building block with the chemical and physical properties of all
+                                matter in the known universe.</dd>
                             <dt>Proton</dt>
                             <dd>Particle in the atomic nucleus, each carrying a positive electric charge (+1).
                             </dd>
                             <dt>Electron</dt>
-                            <dd>An electron is a subatomic particle with a negative basic electrical charge, indicated by the symbols ve- or β-.</dd>
+                            <dd>An electron is a subatomic particle with a negative basic electrical charge, indicated
+                                by the symbols ve- or β-.</dd>
                         </dl>
                     </div>
                 </article>

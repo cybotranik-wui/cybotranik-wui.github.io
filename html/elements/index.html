@@ -3,17 +3,9 @@
 
 <head>
 
-    <!-- Google Analytics -->
+    <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147146676-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', '147146676-1');
-    </script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }; gtag('js', new Date()); gtag('config', '147146676-1');</script>
 
     <!-- Meta -->
     <meta charset="UTF-8">
@@ -67,7 +59,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <!-- Cybotranik WUI -->
-    <script async src="https://unpkg.com/cybotranik-wui"></script>
+    <script src="https://unpkg.com/cybotranik-wui"></script>
+    <!-- Cybotranik WUI Theme -->
+    <script>wui.Theme()</script>
+
+    <!-- Application -->
     <script async src="../../assets/theme/js/app.js"></script>
 </head>
 
@@ -142,6 +138,12 @@
                     <h2>Interactive Elements</h2>
                 </header>
                 <p is="section-description">HTML <a href="interactive-elements/">Interactive Elements</a> elements.</p>
+            </section>
+            <section is="article-section" id="interactive-elements">
+                <header is="section-header">
+                    <h2>Web Components</h2>
+                </header>
+                <p is="section-description">HTML <a href="web-components/">Web Components</a> elements.</p>
             </section>
         </article>
     </main>

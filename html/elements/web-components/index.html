@@ -3,17 +3,9 @@
 
 <head>
 
-    <!-- Google Analytics -->
+    <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147146676-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', '147146676-1');
-    </script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }; gtag('js', new Date()); gtag('config', '147146676-1');</script>
 
     <!-- Meta -->
     <meta charset="UTF-8">
@@ -21,16 +13,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Site Information -->
-    <title>HTML - Element - Embeded Content</title>
-    <meta name="description" content="HTML Element Embeded Content.">
-    <meta name="keywords" content="HTML, Element, Embeded, Content" />
+    <title>HTML - Element - Web Components</title>
+    <meta name="description" content="HTML Element Web Components.">
+    <meta name="keywords" content="HTML, Element, Web, Components" />
 
     <!-- The Open Graph protocol -->
-    <meta property="og:title" content="HTML Element Embeded Content">
+    <meta property="og:title" content="HTML Element Web Components">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="cybotranik-wui.github.io" />
     <meta property="og:site_name" content="cybotranik-wui">
-    <meta property="og:description" content="HTML Element Embeded Content.">
+    <meta property="og:description" content="HTML Element Web Components.">
     <meta property="og:image" content="https://cybotranik-wui.github.io/assets/theme/img/social.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:alt" content="Cybotranik Web User Interface" />
@@ -67,8 +59,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <!-- Cybotranik WUI -->
-    <script async src="https://unpkg.com/cybotranik-wui"></script>
-    <script async src="../../../assets/theme/js/app.js"></script>
+    <script src="https://unpkg.com/cybotranik-wui"></script>
+    <!-- Cybotranik WUI Theme -->
+    <script>wui.Theme()</script>
+
+    <!-- Application -->
+    <script src="../../../assets/theme/js/app.js"></script>
 </head>
 
 <body>
@@ -92,7 +88,7 @@
                         <a href="../../../">Cybotranik</a> &#47;
                         <a href="../../../html/">HTML</a> &#47;
                         <a href="../../elements/">Elements</a> &#47;
-                        <a>Embeded Content</a>
+                        <a>Web Components</a>
                     </p>
                 </nav>
             </div>
