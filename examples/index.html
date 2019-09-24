@@ -62,9 +62,10 @@
     <script src="https://unpkg.com/cybotranik-wui"></script>
     <!-- Cybotranik WUI Theme -->
     <script>wui.Theme()</script>
-    
+
     <!-- Application -->
     <script src="../assets/theme/js/app.js"></script>
+    <link rel="stylesheet" href="../assets/theme/css/app.css">
 </head>
 
 <body>
@@ -90,12 +91,37 @@
                     </p>
                 </nav>
             </div>
-            <section is="article-section" id="starter">
-                <header is="section-header">
-                    <h2>Starter</h2>
-                </header>
-                <p is="section-description">HTML <a href="starter/" target="_blank">Starter</a> Example.</p>
-            </section>
+            <div class="bar align-center" id="example">
+                <section is="article-section" id="starter" class="width-25">
+                    <header is="section-header">
+                        <h2>Starter</h2>
+                    </header>
+                    <figure>
+                        <img src="https://cybotranik-wui.github.io/cybotranik-wui-example/docs/media/shema.png"
+                            alt="blog page">
+                    </figure>
+                    <p is="section-description" class="align-center">HTML <a
+                            href="https://cybotranik-wui.github.io/cybotranik-wui-example/" target="_blank">Starter</a>
+                        Example. Proje <a
+                            href="https://github.com/cybotranik-wui/cybotranik-wui-example/archive/master.zip">Source</a>
+                    </p>
+                </section>
+                <section is="article-section" id="blog" class="width-25">
+                    <header is="section-header">
+                        <h2>Blog</h2>
+                    </header>
+                    <figure>
+                        <img src="https://cybotranik-wui.github.io/cybotranik-wui-example-blog-page/docs/media/shema.png"
+                            alt="blog page">
+                    </figure>
+                    <p is="section-description" class="align-center">HTML <a
+                            href="https://cybotranik-wui.github.io/cybotranik-wui-example-blog-page/"
+                            target="_blank">Blog</a> Example. Proje <a
+                            href="https://github.com/cybotranik-wui/cybotranik-wui-example-blog-page/archive/master.zip">Source</a>
+                    </p>
+
+                </section>
+            </div>
         </article>
     </main>
 
